@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+//
+
+
+@import "header";
+@import "section1";
+@import "section2";
+@import "footer";
+@import "footer-button";
+@import "maps";
+@import "mixins";
+@import "extend";
+

@@ -1,0 +1,18 @@
+@import "maps";
+
+
+.section-1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.h1 {
+    margin-left: 70px;
+    font-size: 13px;
+    color:map-get($colors,h1 );
+    font-family: map-get($fuente,h1 );
+    
+
+}

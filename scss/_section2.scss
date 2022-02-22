@@ -1,0 +1,82 @@
+@import "mixins";
+@import "maps";
+@import "extend";
+
+
+
+//* articles //
+.article,
+.article-2,
+.article-3 {
+  @include article;
+}
+
+//* imagenes // 
+//?imagen1//
+.imagen {
+  background: url(../images/card1.jpg);
+  @include imagen;
+}
+
+//? imagen 2 //
+.imagen-2 {
+
+  background: url(../images/bg6.jpg);
+  @include imagen;
+}
+
+//? imagen 3 // 
+.imagen-3 {
+  background: url(../images/bg5.jpg);
+  @include imagen;
+}
+
+
+// parrafos // 
+
+// extend //
+//parrafo 1 // 
+
+.parrafo {
+  @extend %parrafo;
+  background: map-get($colors, bg-p)
+}
+
+// parrafo 2 //
+
+.parrafo-2 {
+  @extend %parrafo;
+  background: map-get($colors, bg-p2)
+}
+
+// parrafo 3 // 
+
+.parrafo-3 {
+  @extend %parrafo;
+  background: map-get($colors, bg-p3)
+}
+
+// 
+.section-2 {
+  background: map-get($colors, bg-2);
+  background-position: center center;
+  border-radius: 70px;
+  height: 200vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  h2 {
+    font-family: map-get($fuente, p);
+    color: map-get($colors, h2);
+
+  }
+
+  p {
+    font-family: map-get($fuente, h2);
+    color: map-get($colors, p);
+    font-size: map-get($fuente, tamaño);
+
+
+  }
+}

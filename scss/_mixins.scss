@@ -1,0 +1,25 @@
+@mixin article {
+    background-color: white;
+    height: 30%;
+    display: grid;
+    grid-template-areas: "imagen parrafo";
+    grid-template-columns: 40% auto;
+    align-items: center;
+    border-radius: 70px;
+    margin: 15px;
+}
+
+//
+@mixin imagen {
+    grid-area: imagen;
+    height: 95%;
+    margin: 15px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center  ;
+    border-radius: 70px;
+
+}
+
+//
+
