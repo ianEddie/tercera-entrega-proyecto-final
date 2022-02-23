@@ -1,0 +1,21 @@
+
+// //? layout //
+@import "layout/header";
+ @import "layout/footer";
+
+// //? components //
+ @import "components/index/index-section1";
+@import "components/index/index-section2";
+@import "components/index/footer-button";
+
+// //? utilities // 
+
+ @import "utilities/mixins";
+ @import "utilities/extend";
+
+ .body-index{
+    
+    background-image: url(/images/bg-index.jpg);
+   @extend %body;
+}
+

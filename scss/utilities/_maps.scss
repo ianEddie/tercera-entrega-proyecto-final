@@ -1,4 +1,4 @@
-// mapa de colores // 
+//? mapa de colores ?// 
 $colors: (h1:rgb(233, 227, 227),
     h2:rgb(63, 60, 66),
     p:rgb(49, 45, 49),
@@ -7,11 +7,13 @@ $colors: (h1:rgb(233, 227, 227),
     bg-p2: linear-gradient(rgba(57, 120, 122, 0.5), rgba(168, 232, 235, 0.5)),
     bg-p3: linear-gradient(rgba(88, 172, 147, 0.5),rgba(6, 232, 240, 0.5) ),
     bg-2:linear-gradient(rgba(0, 0, 0, 0.3), rgba(28, 209, 200, 0.3)),
+    bg-3:linear-gradient(rgba(0, 0, 0, 0.7), rgba(70, 14, 5, 0.7)),
+    bg-4:linear-gradient(rgba(67, 122, 194, 0.7), rgba(70, 14, 5, 0.7)),
 );
-// mapa de fuentes //
+
+//? mapa de fuentes ?//
 $fuente: (h1: 'Syncopate',
     h2:'Poiret One',
     p: 'Montserrat Alternates',
     tamaño: 18px,
-
 );

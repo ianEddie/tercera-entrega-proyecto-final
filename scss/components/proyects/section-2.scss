@@ -1,0 +1,15 @@
+.section-2-proyects{
+    @extend %section-2;
+    height: 300vh;
+    background: map-get($colors, bg-3);
+}
+.article-contain{
+    @extend %article-contain;  
+    height: 20%;
+}
+.article-proyects{
+    @extend %article;  
+}
+.img-1{
+    @extend %img;
+}

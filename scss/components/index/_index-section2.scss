@@ -1,31 +1,31 @@
-@import "mixins";
-@import "maps";
-@import "extend";
+@import "utilities/mixins";
+@import "utilities/maps";
+@import "utilities/extend";
 
 
 
-//* articles //
+// articles //
 .article,
 .article-2,
 .article-3 {
   @include article;
 }
 
-//* imagenes // 
-//?imagen1//
+// imagenes // 
+//imagen1//
 .imagen {
   background: url(../images/card1.jpg);
   @include imagen;
 }
 
-//? imagen 2 //
+// imagen 2 //
 .imagen-2 {
 
   background: url(../images/bg6.jpg);
   @include imagen;
 }
 
-//? imagen 3 // 
+// imagen 3 // 
 .imagen-3 {
   background: url(../images/bg5.jpg);
   @include imagen;
@@ -58,13 +58,9 @@
 
 // 
 .section-2 {
-  background: map-get($colors, bg-2);
-  background-position: center center;
-  border-radius: 70px;
+  @extend %section-2;
   height: 200vh;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  background: map-get($colors, bg-2);
 
   h2 {
     font-family: map-get($fuente, p);
@@ -76,6 +72,7 @@
     font-family: map-get($fuente, h2);
     color: map-get($colors, p);
     font-size: map-get($fuente, tamaño);
+
 
 
   }

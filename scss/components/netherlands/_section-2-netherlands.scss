@@ -1,0 +1,10 @@
+.section-2-ner{
+    @extend %section-2;
+    height: 100vh;
+    background: map-get($colors, bg-4);
+}
+
+.article-contain-ner{
+    @extend %article-contain;
+    
+}

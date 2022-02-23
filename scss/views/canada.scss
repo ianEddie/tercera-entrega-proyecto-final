@@ -1,0 +1,18 @@
+// //? layout //
+@import "layout/header";
+ @import "layout/footer";
+
+// //? components //
+@import "components/canada/section-2-canada";
+@import "components/proyects/button";
+
+// //? utilities // 
+
+ @import "utilities/mixins";
+ @import "utilities/extend";
+
+ .body-canada{
+     background-image: url(/images/bg-canada.jpg);
+     @extend %body;
+
+ }
